@@ -1,0 +1,615 @@
+/* header */
+header{
+    position: absolute;
+}
+header .innerbox{
+    border-bottom: none;
+}
+header .innerbox #nav>li a {
+    color: white !important; 
+}
+/* mainbanner */
+#mainBanner {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+#mainBanner>.banner_title {
+    position: fixed;
+    bottom: 22%;
+    left: 5%;
+    font-size: 5em;
+    width: 70px;
+    word-break: break-all;
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    z-index: 1;
+}
+#mainBanner>.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#mainBanner>.banner>li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#mainBanner>.banner>li:first-child{
+    display: block;
+    background-image: url(../images/mainbanner1.jpg);
+}
+#mainBanner>.banner>li:nth-child(2){
+    background-image: url(../images/mainbanner2.jpg);
+}
+#mainBanner>.banner>li:last-child{
+    background-image: url(../images/mainbanner3.jpg);
+}
+#mainBanner>.banner_text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 33%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+#mainBanner>.banner_text>div{
+    position: absolute;
+    display: none;
+}
+#mainBanner>.banner_text>div:first-child{
+    display: block;
+}
+#mainBanner>.banner_text h3 {
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#mainBanner>.banner_text span {
+    margin-left: 50px;
+    font-size: 0.9em;
+}
+#mainBanner>.banner_text a{
+    color: white;
+}
+/* container */
+#container {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    background: white;
+}
+#container section {
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+#container section .title {
+    font-size: 4em;
+    margin: 30px 0 30px 190px;
+}
+.what_wrap>.whats_on {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.what_wrap>.whats_on .what_text {
+    width: 60%;
+    height: 550px;
+    position: relative;
+    box-sizing: border-box;
+    background-color: black;
+}
+.what_wrap>.whats_on .what_text .textBox {
+    position: absolute;
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 0 40px 20%;
+    color: white !important;
+}
+.what_wrap>.whats_on .what_text li.active{
+    display: block;
+}
+.what_wrap>.whats_on .what_text .textBox h3 {
+    margin: 0 0 15px -30px;
+    font-size: 1.8em;
+}
+.what_wrap>.whats_on .what_text .textBox strong {
+    font-size: 2.9em;
+    position: absolute;
+    z-index: 10000;
+}
+.what_wrap>.whats_on .what_text .textBox p {
+    margin: 300px 0 30px 0;
+    color: #ccc;
+}
+.what_wrap>.whats_on .what_text .textBox p span {
+    display: block;
+}
+.what_wrap>.whats_on .w_banner_wrap {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 45%;
+    transform: translateY(50%);
+    z-index: 1000;
+    overflow: hidden;
+}
+.bx-viewport {
+    overflow: unset !important;
+}
+.what_wrap>.whats_on .w_banner_wrap .w_banner li{
+    width: 40vw !important;
+    min-width: 540px;
+    max-width: 700px;
+}
+.what_wrap>.whats_on .w_banner_wrap .w_banner li img{
+    width: 100%;
+}
+.what_wrap>.whats_on .pager_wrap{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    bottom: 4%;
+    right: 25%;
+    transform: translateX(50%);
+    z-index: 1000;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.what_wrap>.whats_on .pager_wrap div{
+    z-index: 0;
+}
+.what_wrap>.whats_on .pager_wrap .arrow{
+    display: flex;
+    justify-content: space-between;
+}
+.what_wrap>.whats_on .pager_wrap .arrow li{
+    align-items: center;
+    display: block;
+    height: 30px;
+}
+.what_wrap>.whats_on .pager_wrap .arrow li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.what_wrap>.whats_on .pager_wrap .arrow .leftarrow a{
+    background: url(../images/icon/arrow-left-line.svg);
+}
+.what_wrap>.whats_on .pager_wrap .arrow .rightarrow a{
+    background: url(../images/icon/arrow-right-line.svg);
+}
+.visit_wrap{
+ margin-bottom: 90px;
+}
+.visit_wrap .vi_text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.visit_wrap .vi_text .vi_text_box{
+    width: 47%;
+}
+.visit_wrap .vi_text .vi_text_box p span{
+    word-break: keep-all;
+}
+.visit_wrap .vi_text>div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+.visit_wrap .vi_text div:last-child .textBox{
+    width: 100%;
+    text-align: right;
+}
+.visit_wrap .vi_text div:last-child .imgBox{
+    order: 2;
+    margin-top: 10px;
+    width: 100%;
+}
+.visit_wrap .vi_text .imgBox img{
+    width: 100%;
+}
+.visit_wrap .vi_banner{
+    margin-top: 70px;
+}
+.visit_wrap .vi_banner h3{
+    border-bottom: 1px solid #333;
+}
+.visit_wrap .vi_banner .program{
+    top: 10px;
+}
+.visit_wrap .vi_banner .program li{
+    padding-top: 3px;
+}
+.visit_wrap .vi_banner .program li>img{
+    width: 100%;
+}
+.visit_wrap .vi_banner .program .vi_text{
+    line-height: 40px;
+    align-items: center;
+}
+.visit_wrap .vi_banner .program .vi_text a{
+    color: #333;
+    display: block;
+    height: 40px;
+}
+.visit_wrap .vi_banner .program .vi_text a img{
+    vertical-align: middle;
+    height: 45%;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+/* 중간 배너 광고 */
+.advertisement{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/event.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* 배너광고 텍스트 */
+.advertisement .add_text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    min-width: 400px;
+    height: 270px;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+.advertisement .add_text p {
+    color: white;
+    font-size: 2em;
+}
+.advertisement .add_text p > strong{
+    font-weight: 500;
+}
+.advertisement .add_text p > span {
+    color: #eee;
+}
+.advertisement .add_text p > span:nth-child(2){
+    font-weight: 200;
+}
+.advertisement .add_text p > span:last-child{
+    display: block;
+    font-size: 0.6em;
+}
+.advertisement .add_text .more{
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+/* 전시 소개 */
+.exhibi_wrap {
+    height: 900px;
+    position: relative;
+}
+.exhibi_wrap .exhibi {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.exhibi_wrap .exhibi .exhibi_imgBox {
+    width: 70%;
+    position: relative;
+}
+.exhibi_wrap .exhibi .exhibi_imgBox div:first-child{
+    width: 45%;
+    min-width: 400px;
+}
+.exhibi_wrap .exhibi .exhibi_imgBox div:last-child{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 55%;
+    min-width: 500px;
+}
+.exhibi_wrap .exhibi .exhibi_imgBox div img{
+    width: 100%;
+}
+.exhibi_wrap .exhibi_textBox{
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    word-break: keep-all;
+    text-align: right;
+}
+.exhibi_wrap .exhibi_textBox h3{
+    font-size: 3em;
+}
+
+.exhibi_wrap .exhibi_textBox span{
+    font-size: 1.5em;
+    color: #777;
+}
+.exhibi_wrap .exhibi_textBox p{
+    margin-top: 30px;
+    margin-left: 180px;
+    font-weight: 500;
+    line-height: 1.7em;
+    color: #777;
+}
+.exhibi_wrap .exhibi_textBox .more{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 250px;
+    z-index: 10;
+}
+.exhibi_wrap .exhibi_textBox .more::after{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    position: absolute;
+    right: -8px;
+    bottom: -8px;
+}
+/* 뉴스 */
+.news_wrap{
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/news.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.news_wrap .news_textBox{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: white;
+}
+.news_wrap .news_textBox h3{
+    font-size: 2em;
+}
+.news_wrap .news_textBox span{
+    font-size: 1.2em;
+}
+.news_wrap .news_textBox .more{
+    margin-top: 50px;
+    background: none;
+}
+@media screen and (max-width:1024px) {
+    #mainBanner>.banner_text{
+        width: 45%;
+    }
+    #mainBanner>.banner_title{
+        bottom: 35%;
+    }
+    /* 섹션별 제목 위치 조절 */
+    #container section .title{
+        margin: 30px 0 70px 30px;
+    }
+    /* what'on 텍스트 여백 조절 */
+
+    .what_wrap>.whats_on .what_text{
+        height: 420px;
+    }
+    .what_wrap>.whats_on .what_text .textBox{
+        padding:70px 0 90px 10%;
+    }
+    .what_wrap>.whats_on .what_text .textBox h3{
+        font-size: 1.3em;
+        margin: 0;
+    }
+    .what_wrap>.whats_on .what_text .textBox strong{
+        position: relative;
+        font-size: 2em;
+        left: 20px;
+    }
+    .what_wrap>.whats_on .what_text .textBox p{
+        margin-top: 70px;
+    }
+    /* what'on 배너 슬라이드 위치조절 */
+    .what_wrap>.whats_on .w_banner_wrap .w_banner li{
+        min-width: 380px;
+    }
+    .visit_wrap .vi_banner h3{
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+    .visit_wrap .vi_banner .program{
+        /* justify-content: space-around; */
+    }
+    .visit_wrap .vi_banner .program .vi_text a img{
+    }
+    .exhibi_wrap{
+        height: auto;
+    }
+    .exhibi_wrap .exhibi{
+        margin-bottom: 100px;
+    }
+    .exhibi_wrap .exhibi .exhibi_imgBox{
+        width: 100%;
+    }
+    .exhibi_wrap .exhibi .exhibi_imgBox div:first-child{
+        min-width: 250px;
+    }
+    .exhibi_wrap .exhibi .exhibi_imgBox div:last-child{
+        position: unset;
+        width: 65%;
+        min-width: 300px;
+        margin-left: auto;
+        margin-top: 30px;
+    }
+    .exhibi_wrap .exhibi_textBox{
+        width: 100%;
+        position: unset;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .exhibi_wrap .exhibi_textBox p{
+        margin: 30px 0;
+    }
+    .exhibi_wrap .exhibi_textBox .more{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:767px) {
+    #mainBanner>.banner_title{
+        display: none;
+    }
+    #mainBanner>.banner_text{
+        width: 100%;
+        text-align: center;
+    }
+    #mainBanner>.banner_text>div{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2em;
+    }
+    #mainBanner>.banner_text span{
+        display: block;
+        margin: 0;
+    }
+    /* what'on 배경색 통일 */
+    .what_wrap>.whats_on .what_text{
+        width: 100%;
+    }
+    .what_wrap>.whats_on .imgBg{
+        display: none;
+    }
+    .what_wrap>.whats_on .what_text .textBox{
+        padding-top: 50px;
+        padding-left: 5%;
+        padding-bottom: 160px;
+    }
+    .what_wrap>.whats_on .what_text .textBox p{
+        margin-top: 40px;
+        font-size: 1.1em;
+    }
+    .what_wrap>.whats_on .what_text .textBox .more{
+        width: 250px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+    }
+    /* what'on 슬라이드 배너 위치,크기조정 */
+    .what_wrap>.whats_on .w_banner_wrap{
+        width: 82vw;
+        bottom: -20px;
+    }
+    .what_wrap>.whats_on .w_banner_wrap .w_banner li{
+        min-width: 250px;
+        max-width: 330px;
+    }
+    /* what'on pager 위치조정 및 색상 변경 */
+    .what_wrap>.whats_on .pager_wrap{
+        color: white;
+        bottom: 25%;
+    }
+    .what_wrap>.whats_on .pager_wrap .arrow .leftarrow a{
+        background: url(../images/icon/arrow-left-line-w.svg);
+    }
+    .what_wrap>.whats_on .pager_wrap .arrow .rightarrow a{
+        background: url(../images/icon/arrow-right-line-w.svg);
+    }
+    /* innerbox padding 제거 */
+    #container .innerbox{
+        padding: 0;
+    }
+    /* visit_wrap 상단 여백 조절 */
+    #container .visit_wrap{
+        padding-top: 170px;
+    }
+    .visit_wrap .vi_text .vi_text_box{
+        width: 100%;
+    }
+    .visit_wrap .vi_text>div:last-child{
+        display: block;
+    }
+    .visit_wrap .vi_text .textBox{
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .visit_wrap .vi_text .textBox h3{
+        font-size: 1.4em;
+    }
+    .visit_wrap .vi_text .textBox p{
+        font-size: 1.15em;
+        padding-right: 10px;
+    }
+    .visit_wrap .vi_text>div:last-child .textBox{
+        text-align: left;
+        width: auto;
+    }.visit_wrap .vi_banner .program_wrap{
+        margin: 0 10px;
+    }
+    .visit_wrap .vi_banner .program .vi_text{
+        font-size: 1.2em;
+    }
+    .advertisement,
+    .news_wrap{
+        height: 70vw;
+        background-position: 5%;
+    }
+    .advertisement .add_text{
+        width: 100%;
+        min-width: 0;
+        height: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .advertisement .add_text p{
+        padding-top: 27vw;
+        padding-bottom: 50px;
+    }
+    .advertisement .add_text .more{
+        position: unset;
+        margin: 0 auto;
+    }
+    .news_wrap{
+        height: 70vw;
+        background-position: 5%;
+    }
+    .news_wrap .news_textBox{
+        text-align: center;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .news_wrap .news_textBox h3{
+        margin-bottom: 5px;
+    }
+    .news_wrap .news_textBox span{
+        display: block;
+    }
+    .news_wrap .news_textBox .more{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:600px) {
+    .visit_wrap .vi_banner .program{
+        width: 250%;
+    }
+    .advertisement,
+    .news_wrap{
+        height: 90vw;
+        background-position: 18%;
+    }
+}

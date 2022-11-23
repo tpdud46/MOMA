@@ -1,0 +1,82 @@
+* {
+  font-family: "Noto Sans KR", "roboto", sans-serif;
+}
+
+body, div, ul, ol, li, h1, h2, h3, h4, h5, form, p, button, input {
+  margin: 0;
+  padding: 0;
+}
+div, a{
+  box-sizing: border-box;
+}
+address {
+  font-style: normal;
+  word-break: keep-all;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+table {
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #333;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blind {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -9999em;
+}
+.innerbox {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.more {
+  display: block;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 47px;
+  color: white;
+  background-color: #111;
+  border: 1px solid white;
+}
+.more:hover{
+  color: white;
+}
+.scroll_hidden{
+  overflow: hidden;
+}
+.scrollX{
+  overflow-x: scroll;
+}
+@media screen and (max-width:1024px) {
+  body{
+      font-size: 14px;
+  }
+}
+@media screen and (max-width:767px) {
+  body{
+      font-size: 12px;
+  }
+}

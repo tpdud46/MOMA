@@ -1,0 +1,214 @@
+/* 공용 */
+strong{
+    font-size: 1.5em;
+}
+.imgBox{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* container */
+#container > section{
+    box-sizing: border-box;
+    padding: 70px 110px 0;
+}
+/* visit_intro */
+.visit_intro{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.visit_intro>h2{
+    font-size: 3em;
+    font-weight: 400;
+}
+.visit_intro>.imgBox{
+    width: 80%;
+    height: 40vw;
+    max-height: 570px;
+    background-image: url(../images/museum.jpg);
+}
+/* visit_content */
+.visit_content{
+    text-align: center;
+}
+.visit_content>.exhibi_hours{
+    padding-top: 100px;
+    text-align: center;
+}
+.visit_content>.exhibi_hours>strong{
+    line-height: 2em;
+}
+.visit_content>.exhibi_hours>span{
+    display: block;
+    font-weight: 600;
+    color: #555;
+}
+/* exhibi_ad */
+.visit_content>.exhibi_ad_title{
+    display: block;
+    padding: 80px 0 30px;
+}
+.visit_content>.exhibi_ad{
+    width: 100%;
+    text-align: center;
+}
+.visit_content>.exhibi_ad span{
+    display: block;
+    font-size: 0.9em;
+    color: #444;
+}
+.visit_content>.exhibi_ad th{
+    width: 37.5%;
+    padding: 25px 0;
+    background-color: #e4e3e3;
+}
+.visit_content>.exhibi_ad th:first-child{
+    width: 25%;
+}
+.visit_content>.exhibi_ad td{
+    height: 70px;
+}
+.visit_content>.exhibi_ad_plus{
+    padding-top: 10px;
+    text-align: left;
+}
+.visit_content>.exhibi_ad_plus>span{
+    display: block;
+}
+/* museum_map */
+.museum_map{
+    padding: 100px 0;
+}
+.museum_map>.imgBox{
+    width: 100%;
+    height: 30vw;
+    max-height: 390px;
+    margin-top: 50px;
+}
+.museum_map>.textBox{
+    text-align: left;
+}
+.museum_map>.textBox>span{
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #555;
+}
+/* transport */
+.museum_map>.transport{
+    margin-top: 50px;
+}
+.museum_map>.transport>section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    text-align: left;
+    word-break: keep-all;
+}
+.museum_map>.transport>section>h3{
+    width: 13%;
+    font-size: 2em;
+}
+.museum_map>.transport>section>div{
+    width: 85%;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 2.3em;
+}
+.museum_map>.transport>section>div>*{
+    padding: 15px 0;
+    border-top: 1px solid #333;
+}
+.museum_map>.transport>section>div>article>span{
+    padding: 0 30px;
+}
+.museum_map>.transport>section>div>article>span:first-child{
+    display: block;
+    padding: 0 0 7px;
+}
+.museum_map>.transport>section>div>article>p{
+    text-indent: 20px;
+}
+.museum_map>.transport>section>div>article>p>span{
+    display: block;
+    color: #555;
+    text-indent: 0;
+    margin-left: 50px;
+}
+.museum_map>.transport>section .blue{
+    color: #6080FF;
+}
+.museum_map>.transport>section .red{
+    color: #FF7092;
+}
+.museum_map>.transport>section .green{
+    color: #72DB9C;
+}
+@media screen and (max-width:1024px) {
+    #container > section{
+        padding: 70px 20px 0;
+    }
+}
+@media screen and (max-width:767px) {
+    strong{
+        font-size: 2em;
+    }
+    #container > section{
+        padding: 40px 0 0;
+    }
+    .visit_intro>h2{
+        font-size: 2.5em;
+        margin-left: 20px;
+    }
+    .visit_intro>.imgBox{
+        width: 100%;
+        height: 55vw;
+        min-height: 350px;
+        margin-top: 40px;
+    }
+    .visit_content>.exhibi_hours>span{
+        font-size: 1.2em;
+    }
+    .visit_content>.exhibi_ad{
+        width: 95%;
+        margin: 0 auto;
+        font-size: 1.1em;
+    }
+    .visit_content>.exhibi_ad th{
+        padding: 15px 0;
+    }
+    .visit_content>.exhibi_ad td{
+        height: 60px;
+    }
+    .visit_content>.exhibi_ad_plus{
+        padding-left: 15px;
+    }
+    .museum_map{
+        padding-bottom: 10px;
+    }
+    .museum_map>.imgBox{
+        height: 50vw;
+        min-height: 350px;
+    }
+    .museum_map>.transport>section>h3{
+        width: 100%;
+        text-indent: 20px;
+    }
+    .museum_map>.transport>section>div{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+    .museum_map>.transport>section>div>article>p>span{
+        margin-left: 20px;
+        font-size: 0.9em;
+    }
+    .museum_map>.transport>section>div>article>p>span:first-child{
+        padding-top: 5px;
+    }
+}
